@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prociono&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #edf3f8;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+header {
+  padding-top: 20px;
+}
+.menu {
+    display: none;
+}
+.header-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-parent__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  color: #36536b;
+}
+.header-parent__right a {
+  font-weight: 700;
+}
+.header-parent__right button {
+  background-color: #ba4270;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 24px;
+}
+.home-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-parent__left h1 {
+  font-size: 60px;
+  width: 450px;
+  font-family: "DM Serif Display", serif;
+  color: #36536b;
+}
+.home-parent__right img {
+  width: 500px;
+  height: 700px;
+}
+
+.implement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+}
+.implement img {
+  width: 700px;
+  height: 400px;
+}
+.implement__right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.implement__right h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 48px;
+  color: #36536b;
+}
+.implement__right p {
+  width: 450px;
+  color: #6c8294;
+  font-size: 15px;
+}
+.img-parent {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+.card p {
+  color: #36536b;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #1b262f;
+  color: #fbfcfe;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 31px 0;
+}
+.footer-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-parent__left,
+.footer-parent__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-parent__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 50px;
+    }
+    .header-parent {
+        font-size: 13px;
+    }
+    .home-parent {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .implement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        gap: 20px;
+    }
+    .implement img {
+        width: 300px;
+        height: 250px;
+    }
+    .implement h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .implement p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .home-parent__right img {
+        width: 300px;
+        height: 400px;
+    }
+    .home-parent__left h1 {
+        font-size: 38px;
+    }
+    .card img {
+        width: 80px;
+    }
+    .card p {
+        font-size: 15px;
+    }
+    .footer-parent__nav {
+        font-size: 14px;
+    }
+}
+@media (max-width: 375px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .menu {
+        display: block;
+    }
+    .header-parent__right {
+        display: none;
+    }
+    .home-parent {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .home-parent__left h1 {
+        font-size: 24px;
+        text-align: center;
+        width: 250px;
+    }
+    .implement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 20px;
+    }
+    .implement img {
+        width: 250px;
+        height: 200px;
+    }
+    .implement h2 {
+        font-size: 23px;
+        text-align: center;
+    }
+    .implement p {
+        font-size: 12px;
+        width: 255px;
+        text-align: center;
+    }
+    .home-parent__right img {
+        width: 250px;
+        height: 300px;
+    }
+    .img-parent {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .card {
+        gap: 18px;
+    }
+    .card img {
+        width: 90px;
+    }
+    .card p {
+        font-size: 13px;
+    }
+    .footer-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-parent__left,
+.footer-parent__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+}
